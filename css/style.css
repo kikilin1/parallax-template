@@ -13,6 +13,8 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  margin-left: 15px;
+  
 }
 
 .button-collapse {
@@ -54,4 +56,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+ul.text-bottom{
+     list-style-type: none;
 }
