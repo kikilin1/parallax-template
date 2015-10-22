@@ -61,3 +61,10 @@ footer.page-footer {
 ul.text-bottom{
      list-style-type: none;
 }
+.banner-img{
+    height: auto;
+    
+}
+.nav-wrapper{
+    margin-left: auto;
+}
