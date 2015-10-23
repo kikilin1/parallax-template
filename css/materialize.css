@@ -5359,7 +5359,7 @@ nav {
         -ms-transition: color .3s;
         transition: color .3s; }
       nav .input-field label.active i {
-        color: #fff; }
+        color: rgb(16, 3, 3); }
       nav .input-field label.active {
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
@@ -6342,7 +6342,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     -ms-transition: color .2s;
     transition: color .2s; }
     .input-field .prefix.active {
-      color: #26a69a; }
+      color: rgb(16, 3, 3); }
   .input-field .prefix ~ input, .input-field .prefix ~ textarea {
     margin-left: 3rem;
     width: 92%;
