@@ -6,8 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
+nav ul a {
   color: #444;
 }
 
@@ -54,4 +53,26 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.nonparallax{
+    margin-right: 400px;
+  
+}
+.logo-image{
+    height: 500px;
+    margin-right: 900px;
+    padding-bottom:
+    
+    
+
+}
+
+.btn-ctr{
+    margin: 0 auto;
+    display: block;
+}
+
+#logo-container, .header, .card-title{
+    font-family: 'Kaushan Script', cursive;
 }
