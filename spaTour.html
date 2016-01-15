@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spa Tour</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <script type="text/js">
+        var image1=new Image()
+        image1.src="img/img/f.jpg"
+         var image2=new Image()
+        image1.src="img/img/o.jpg"
+         var image3=new Image()
+        image1.src="img/img/fh.jpg"
+         var image4=new Image()
+        image1.src="img/img/gd.jpg"
+         var image5=new Image()
+        image1.src="img/img/re.jpg"
+         var image1=new Image()
+        image1.src="img/img/er.jpg"
+        
+        
+        
+        
+        </script>
+        <style>
+           
+            .container{
+                
+                margin-top: 200px;
+                margin-left: 300px;
+            }
+            #effect {
+                padding: 0.4em;
+                background: #555 url(img/beach.jpg);
+                opacity: 0.5;
+            }
+            #effect {
+                max-width: 490px;
+                height: 320px;
+            }  
+        
+        
+        
+        
+        
+        </style>
+    
+    
+    
+    </head>
+    <body id="effect">
+        <div class="container">
+            <div class="row" id="slideShowImages">
+                <img src="img/img/f.jpg" alt="slide1"/>
+                <img src="img/img/o.jpg" alt="slide2"/>
+                <img src="img/img/fh.jpg" alt="slide3"/>
+                <img src="img/img/gd.jpg" width="650" height="500" alt="slide4"/>
+                <img src="img/img/re.jpg" alt="slide5"/>
+                <img src="img/img/er.jpg" width="650" height="500" alt="slide6"/>
+            </div>
+        </div>
+        
+        <button id="slideShowButton"></button>
+        <script type="text/js">
+        var step=1
+        function slideit(){
+        document.images.slide.src=eval("image"+step+".src")
+        if(step<3){
+        step++
+        
+        }
+        else{
+        step=1
+        setTimeout("slideit()",2005)
+        }
+        }
+        slideit()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+</html>
