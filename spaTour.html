@@ -4,42 +4,77 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Spa Tour</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-        <script type="text/js">
-        var image1=new Image()
-        image1.src="img/img/f.jpg"
-         var image2=new Image()
-        image1.src="img/img/o.jpg"
-         var image3=new Image()
-        image1.src="img/img/fh.jpg"
-         var image4=new Image()
-        image1.src="img/img/gd.jpg"
-         var image5=new Image()
-        image1.src="img/img/re.jpg"
-         var image1=new Image()
-        image1.src="img/img/er.jpg"
+        <link rel="import" href=index.html>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
         
-        
-        
-        
-        </script>
         <style>
+            
            
-            .container{
+            body{
+                background-image:  url(img/beach.jpg)
+            
+            
+            
+            
+            }
+            ul{
+                list-style: none;
+                margin: 0 auto;
+                padding: 0;
+                display: block;
+                max-width: 780px;
+                text-align: center;
+            }
+            ul li{
+                display: inline-block;
+                padding: 8px;
                 
-                margin-top: 200px;
-                margin-left: 300px;
+                margin: 10px;
+            
+            
+            
             }
-            #effect {
-                padding: 0.4em;
-                background: #555 url(img/beach.jpg);
-                opacity: 0.5;
+            ul li img{
+                display: block;
             }
-            #effect {
-                max-width: 490px;
-                height: 320px;
-            }  
-        
+            a{
+                text-decoration: none;
+            
+            }
+            #overlay{
+                background-image: url(img/beach.jpg);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                text-align: center;
+            }
+            #overlay img{
+                margin-top: 10%;
+            
+            
+            }
+            img{
+                overflow: hidden;
+                -webkit-box-shadow: 5px 5px 5px #111;
+                box-shadow: 5px 5px 5px #111;  
+            }
+            .grow img {
+                height: 100px;
+                width: 200px;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+            .grow img:hover {
+                width: 200px;
+                height: 200px;
+            }
+            
         
         
         
@@ -49,54 +84,42 @@
     
     
     </head>
-    <body id="effect">
-        <div class="container">
-            <div class="row" id="slideShowImages">
-                <img src="img/img/f.jpg" alt="slide1"/>
-                <img src="img/img/o.jpg" alt="slide2"/>
-                <img src="img/img/fh.jpg" alt="slide3"/>
-                <img src="img/img/gd.jpg" width="650" height="500" alt="slide4"/>
-                <img src="img/img/re.jpg" alt="slide5"/>
-                <img src="img/img/er.jpg" width="650" height="500" alt="slide6"/>
+    <body>
+        <div class="grow">
+        <center><h1>Spa Tour</h1></center>
+        <ul id="spa-images">
+            <li><a href="img/img/f.jpg"><img src="img/img/f.jpg" width="100" alt="img1"/></a></li>
+            <li><a href="img/img/o.jpg"><img src="img/img/o.jpg" width="100" alt="img2"/></a></li>
+            <li><a href="img/img/fh.jpg"><img src="img/img/fh.jpg" width="100" alt="img3"/></a></li>
+            <li><a href="img/img/gd.jpg"><img src="img/img/gd.jpg" width="100" alt="img4"/></a></li>
+            <li><a href="img/img/re.jpg"><img src="img/img/re.jpg" width="100" alt="img5"/></a></li>
+            <li><a href="img/img/er.jpg"><img src="img/img/er.jpg" width="100" alt="img6"/></a></li>
+        </ul>
             </div>
-        </div>
-        
-        <button id="slideShowButton"></button>
-        <script type="text/js">
-        var step=1
-        function slideit(){
-        document.images.slide.src=eval("image"+step+".src")
-        if(step<3){
-        step++
-        
-        }
-        else{
-        step=1
-        setTimeout("slideit()",2005)
-        }
-        }
-        slideit()
+    
         
         
         
         
         
-        
-        
-        
-        
+        <script>
+            var $overlay = $('<div id="overlay"></div>');
+            var $image = $("<img>");
+            var $caption = $("<p></p>");
+            $overlay.append($image);
+            $overlay.append($caption);
+            $("body").append($overlay);
+            $("#spa-images a").click(function(event){
+                event.preventDefault();
+                var imageLocation = $(this).attr("href");
+                $image.attr("src", imageLocation);
+                $overlay.show();
+                var captionText = $(this).children("img").attr("alt");
+                $caption.text(captionText);
+});
+            $overlay.click(function(){
+                $overlay.hide();
+            });
         </script>
-    
-    
-    
-    
-    
-    
-    
-    
     </body>
-
-
-
-
 </html>
