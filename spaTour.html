@@ -4,10 +4,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Spa Tour</title>
-        <link rel="import" href=index.html>
+        <link rel="import" id="menu-import" href="index.html">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
         
         <style>
+            
+        
             
            
             body{
@@ -53,6 +55,9 @@
             }
             #overlay img{
                 margin-top: 10%;
+                max-width: 600px;
+                max-height: 600px;
+                
             
             
             }
@@ -71,8 +76,7 @@
           transition: all 1s ease;
 }
             .grow img:hover {
-                width: 200px;
-                height: 200px;
+                transform: scale(1.05,1.05);
             }
             
         
@@ -103,6 +107,9 @@
         
         
         <script>
+            var nav= document.querySelector("#menu-import").import.querySelector("nav");
+            $("body").prepend(nav);
+            
             var $overlay = $('<div id="overlay"></div>');
             var $image = $("<img>");
             var $caption = $("<p></p>");
