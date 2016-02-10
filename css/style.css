@@ -52,7 +52,10 @@ p {
 }
 
 footer.page-footer {
-  margin: 0;
+    padding-top: 50px;
+    
+  
+
 }
 
 .nonparallax{
@@ -76,3 +79,4 @@ footer.page-footer {
 #logo-container, .header, .card-title{
     font-family: 'Kaushan Script', cursive;
 }
+
