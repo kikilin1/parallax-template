@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type"
+     <meta http-equiv="Content-Type"
         content="text/html; charset=UTF-8"/>
         <meta name="viewport"
               content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Service</title>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <link href="css/materialize.css"
+              type="text/css"
+              rel="stylesheet"
+              media="screen,projection"/>
+        <link href="css/style.css"
+              type="text/css"
+              rel="stylesheet"
+              media="screen,projection"/>
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
      <link rel="import" id="menu-import" href="index.html">
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        
     <style>
         img{
             width: 250px;
@@ -44,17 +55,47 @@
     </style>
     </head>
     <body>
+        <nav class="brown lighten-3" role="navigation" id="nav1">
+            <div class="nav-wrapper container">
+                <a id="logo-container"
+                   href="#"
+                   class="brand-logo brown-text text-darken-4">Heaven-E</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="spaTour.html">spa Tour</a></li>
+                </ul>
+                <ul id="nav-mobile"
+                    class="side-nav" style="left: -250px;">
+                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="spaTour.html">spa Tour</a></li>
+                </ul>
+                <a href="#"
+                   data-activates="nav-mobile"
+                   class="button-collapse">
+                    <i class="material-icons">menu</i></a>
+        
+            </div>
+        </nav>
+
         <div class="contrainer">
         <div class="row">
+            <div class="col s12">
             
-                
                     <img src="img/img/FengShui.png">
                     <img src="img/img/KMI-Treatment.png">
                     
                     <img src="img/img/gold.jpg">
+            </div>
+            
+                
                 
               
-            <div id="bottomline"></div>
+       
             
             
              </div>
@@ -120,10 +161,15 @@ For normal to dry pigment skin helps to lighten all types of discoloration of sk
         
         
         
-        <script>var nav= document.querySelector("#menu-import").import.querySelector("nav");
-            $("body").prepend(nav);
+        <script>/*var nav= document.querySelector("#menu-import").import.querySelector("nav");
+            $("body").prepend(nav);*/
+            var footer = document.querySelector("#menu-import").import.querySelector("footer");
+            $("body").append(footer);
         
         </script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
     
     
     

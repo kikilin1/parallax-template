@@ -5,7 +5,19 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Spa Tour</title>
         <link rel="import" id="menu-import" href="index.html">
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <link href="css/materialize.css"
+              type="text/css"
+              rel="stylesheet"
+              media="screen,projection"/>
+        <link href="css/style.css"
+              type="text/css"
+              rel="stylesheet"
+              media="screen,projection"/>
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+     <link rel="import" id="menu-import" href="index.html">
+        
         
         <style>
             
@@ -19,7 +31,7 @@
             
             
             }
-            ul{
+            .grow ul{
                 list-style: none;
                 margin: 0 auto;
                 padding: 0;
@@ -27,7 +39,7 @@
                 max-width: 780px;
                 text-align: center;
             }
-            ul li{
+            .grow ul li{
                 display: inline-block;
                 padding: 8px;
                 
@@ -36,7 +48,7 @@
             
             
             }
-            ul li img{
+            .grow ul li img{
                 display: block;
             }
             a{
@@ -89,6 +101,33 @@
     
     </head>
     <body>
+        <nav class="brown lighten-3" role="navigation" id="nav1">
+            <div class="nav-wrapper container">
+                <a id="logo-container"
+                   href="#"
+                   class="brand-logo brown-text text-darken-4">Heaven-E</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="spaTour.html">spa Tour</a></li>
+                </ul>
+                <ul id="nav-mobile"
+                    class="side-nav" style="left: -250px;">
+                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="spaTour.html">spa Tour</a></li>
+                </ul>
+                <a href="#"
+                   data-activates="nav-mobile"
+                   class="button-collapse">
+                    <i class="material-icons">menu</i></a>
+        
+            </div>
+        </nav>
+       
         <div class="grow">
         <center><h1>Spa Tour</h1></center>
         <ul id="spa-images">
@@ -99,16 +138,35 @@
             <li><a href="img/img/re.jpg"><img src="img/img/re.jpg" width="100" alt="img5"/></a></li>
             <li><a href="img/img/er.jpg"><img src="img/img/er.jpg" width="100" alt="img6"/></a></li>
         </ul>
+           
             </div>
     
         
-        
+         <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <br><br>
+            
+            <br><br>
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <br><br>
+            
+            <br>
         
         
         
         <script>
-            var nav= document.querySelector("#menu-import").import.querySelector("nav");
-            $("body").prepend(nav);
+           /* var nav= document.querySelector("#menu-import").import.querySelector("nav");
+            $("body").prepend(nav);*/
+           
             
             var $overlay = $('<div id="overlay"></div>');
             var $image = $("<img>");
@@ -127,6 +185,12 @@
             $overlay.click(function(){
                 $overlay.hide();
             });
+            
+             var footer = document.querySelector("#menu-import").import.querySelector("footer");
+            $("body").append(footer);
         </script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
     </body>
 </html>

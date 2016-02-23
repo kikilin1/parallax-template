@@ -5,11 +5,23 @@
         content="text/html; charset=UTF-8"/>
         <meta name="viewport"
               content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Products</title>
+    <title>Service</title>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <link href="css/materialize.css"
+              type="text/css"
+              rel="stylesheet"
+              media="screen,projection"/>
+        <link href="css/style.css"
+              type="text/css"
+              rel="stylesheet"
+              media="screen,projection"/>
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
      <link rel="import" id="menu-import" href="index.html">
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        
     <style>
-        span{
+        
+    span{
             font-family: Times;
             font-size: 1.5em;
         
@@ -27,14 +39,42 @@
     </style>
     </head>
     <body>
+         <nav class="brown lighten-3" role="navigation" id="nav1">
+            <div class="nav-wrapper container">
+                <a id="logo-container"
+                   href="#"
+                   class="brand-logo brown-text text-darken-4">Heaven-E</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="spaTour.html">spa Tour</a></li>
+                </ul>
+                <ul id="nav-mobile"
+                    class="side-nav">
+                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="spaTour.html">spa Tour</a></li>
+                </ul>
+                <a href="#"
+                   data-activates="nav-mobile"
+                   class="button-collapse">
+                    <i class="material-icons">menu</i></a>
+        
+            </div>
+        </nav>
+        
+       
         <div class="container">
             <div class="row">
                 
-                <div class="col s6 ">
+                <div class="col s12 m6">
                     <img src="img/dvines-products.jpg">
                 </div>
                     
-                    <div class="col s6"><span><strong>From</strong> health, beauty, and wellness professionals comes an antioxidant rich, safe, and supremely effective luxury skincare line embodying the unique d’vine complex.
+                    <div class="col s12 m6"><span><strong>From</strong> health, beauty, and wellness professionals comes an antioxidant rich, safe, and supremely effective luxury skincare line embodying the unique d’vine complex.
 
 With natural ingredients from wine, grapes and potent botanicals d’vine is a powerful nourishing regimen for the ultimate skincare.
 
@@ -43,34 +83,16 @@ An exclusive professional line perfect for medical, day, and resort spas, dermat
             
                 </div>
             <div class="row">
-                <div class="col s6"><span>Valmont is a very prestigious skincare line and medical skin clinic located on the shores of Lake Geneva. Enjoing a privileged geographic position at the foot of the glaciers in the Valais region, 
+                <div class="col s12 m6"><span><strong>Valmont</strong> is a very prestigious skincare line and medical skin clinic located on the shores of Lake Geneva. Enjoing a privileged geographic position at the foot of the glaciers in the Valais region, 
                     at an altitude of more than 2000 meters the water Valmont collects is pure,
                     gentle and perfectly balanced: Glacial Spring Water.  The first Swiss clinic entirely dedicated to plastic surgery and heir to traditional Swiss medicine 
                     Valmont draws from the unspoiled natural resources of Switzerland and the latest cellular cosmetic research findings to formulate the utomst anti-aging skin care product 
                     eaturing visible and long lasting results.</span>
                 </div>
-                <div class="col s6">
+                <div class="col s12 m6">
                     <img src="img/product-valmont.png" width="550">
-                
-                
                 </div>
-            
-            
-            
-            
-            
-            
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </div>
         
         
@@ -79,10 +101,15 @@ An exclusive professional line perfect for medical, day, and resort spas, dermat
         
         
         
-        <script>var nav= document.querySelector("#menu-import").import.querySelector("nav");
-            $("body").prepend(nav);
+        <script>/*var nav= document.querySelector("#menu-import").import.querySelector("nav");
+            $("body").prepend(nav);*/
+            var footer = document.querySelector("#menu-import").import.querySelector("footer");
+            $("body").append(footer);
         
         </script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
     
     
     
